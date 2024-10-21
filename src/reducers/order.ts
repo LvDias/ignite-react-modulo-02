@@ -21,13 +21,6 @@ export enum ActionTypes {
   CREATE_NEW_ORDER = 'CREATE_NEW_ORDER',
 }
 
-export interface OrderAction {
-  type: ActionTypes
-  payload: { 
-    data: Order
-  }
-}
-
 export function OrderReducer(state: OrderState, action: any) {
   switch (action.type) {
     case ActionTypes.CREATE_NEW_ORDER:

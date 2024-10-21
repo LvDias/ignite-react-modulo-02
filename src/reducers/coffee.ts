@@ -22,17 +22,6 @@ interface CoffeeState {
   coffee: CoffeeList[]
 }
 
-interface CoffeeAction {
-  type: ActionTypes
-  payload: {
-    data: {
-      id: number
-      quantity: number
-      shoppingCart: boolean
-    }
-  }
-}
-
 export function CoffeeReducer(state: CoffeeState, action: any) {
   switch (action.type) {
     case ActionTypes.INSERT_COFFEE_SHOPPING_CART:
